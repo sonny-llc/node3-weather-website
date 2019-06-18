@@ -27,15 +27,15 @@ app.get('', (req, res) => {
     });
 });
 
-app.get('/help', (req, res) => {
+app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
         name: 'Sonny Gale',
     });
 });
 
-app.get('/about', (req, res) => {
-    res.render('Help', {
+app.get('/help', (req, res) => {
+    res.render('help', {
         helpText: 'This is some helpful text.',
         title: 'Help',
         name: 'Sonny Gale',
